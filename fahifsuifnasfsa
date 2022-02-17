@@ -1,0 +1,43 @@
+--Made By The Plant Man#8610--
+--[[Credits To
+    bollsman123#0001 - whitelister,
+    
+    kur_Dev#3557 - whitelister
+]]--
+
+--whitelist--
+local hwidgobrr = {
+    "54A913B4-270F-4E4C-9B1D-90805596195B",
+    "70238B58-E7FD-456E-A583-348730D6CBAE",
+    "BF7164C5-D524-4B73-B314-C25ED42A030A",
+    "8E202E2A-DFA1-46DB-B423-E600A4D3D224",
+    "7CE772B9-6926-4318-A0CE-494DBF10B0C4",
+    "C97182BF-F931-4F5D-ADB0-89EC3618606C"
+}
+local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
+if not table.find(hwidgobrr,hwidcheck) then
+    game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No Whitelist")
+end
+if table.find(hwidgobrr,hwidcheck) then
+    print("whitelisted")
+end
+
+--blacklist--
+local ezeznub = {
+    [1051207945] = {
+        ["reason"] = "The Plant Man#8610 Says EZ KILLUA GET BLACKLIST"
+    };
+    [243942975] = {
+        ["reason"] = "The Plant Man#8610 Says EZ KILLUA GET BLACKLIST"
+    };
+    [1050904901] = {
+        ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH. CLOWN"
+    };
+    [1699292938] = {
+        ["reason"] = "kur_Dev#3557 Says IMAGINE ABUSING SOH SKID. NO MEME BOI FOR U EZEZEZEZ"
+    };
+}
+local nubcheck = ezeznub[game:GetService("Players").LocalPlayer.UserId]
+if nubcheck then
+    game:GetService("Players").LocalPlayer:Kick("ez get blacklist skid",ezeznub[game:GetService("Players").LocalPlayer.UserId]["reason"])
+end
