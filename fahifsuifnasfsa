@@ -15,11 +15,7 @@ local hwidgobrr = {
     "C97182BF-F931-4F5D-ADB0-89EC3618606C"
 }
 local hwidcheck = game:GetService("RbxAnalyticsService"):GetClientId()
-if not table.find(hwidgobrr,hwidcheck) then
-    game:GetService("Players").LocalPlayer:Kick("The Plant Man#8610 Says No Whitelist")
-end
-if table.find(hwidgobrr,hwidcheck) then
-    print("whitelisted")
+print("whitelisted")
 end
 
 --blacklist--
